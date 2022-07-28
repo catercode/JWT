@@ -1,0 +1,30 @@
+//VERIFY TOKEN
+GET http://localhost:8000/posts 
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYmF3YSIsImlhdCI6MTY1ODQ0NDA3MSwiZXhwIjoxNjU4NDQ0MTAxfQ.IuSgHbYuD9gbr4PdtXnQFVvnHwCQrdpjfh-BM-hyOR4
+###
+// CREATE TOKEN
+POST  http://localhost:8000/login
+Content-Type: application/json
+
+{
+ "username": "bawa"
+}
+
+###
+//REFRESH TOKEN  
+POST  http://localhost:8000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYmF3YSIsImlhdCI6MTY1ODQ0NDAwM30.TxL33L9IHb1gkwUQewqdR3o3TXl5xtbBHWva7sUW_34"
+
+}
+
+###
+//DELETE TOKEN
+DELETE  http://localhost:8000/logout
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiYmF3YSIsImlhdCI6MTY1ODQ0NDAwM30.TxL33L9IHb1gkwUQewqdR3o3TXl5xtbBHWva7sUW_34"
+}

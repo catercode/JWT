@@ -1,0 +1,10 @@
+// Generate random keys by using this cmd(
+//     >node
+//     > require('crypto').randomBytes(64).toString('hex')
+// )
+
+// Create Access key variable in env(
+   // ACCESS_TOKEN_SECRET=e8d75825f7b57eeb0649e6424750fb63e8503a29c8cf38b4194aba375740e497eded7766d62700d0ea04cd55b88546fdbdf64d04cf12053262ce501455b2fb53
+    //REFRESH_TOKEN_SECRET=e0b7ccfb4e6c0082233131b3fbebdb55ccf36c72d21b9cfd8bbc6fff3c6f2550cb35dcc1c4fac923ee7ba18d52ae52bec088bb70c3d446f64a2cae21ae6102aa
+
+//)
